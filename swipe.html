@@ -1,0 +1,22 @@
+<div class="container-window">
+<div class="timer-window">Remaining Time:
+<div id="timer"></div>
+</div>
+
+<div class="points-window">Score:
+<div id="points">0</div>
+</div>
+
+<div class="container-game" id="playfield"></div>
+</div>
+
+<p><button class="button-solid" id="game-button" onclick="buttonPressed()" type="button">Start Game</button></p>
+
+<h4 class="toggle-title">Game Settings</h4>
+
+<div class="toggle-content" style="display: none;">
+<div class="settings-window"><label for="user-timer">Set Starting Time</label>
+
+<div id="time-range"></div>
+<input id="settings-timer" max="60" min="10" name="user-timer" onchange="updateTimeRange()" type="range" /> <label for="user-mode">Colorblind Mode</label> <input id="settings-mode" name="colorblind-mode" onchange="changeMode()" type="checkbox" value="mode" /> <label for="user-theme">Color Scheme</label> <select id="settings-theme" name="user-theme" onchange="userSelectedTheme()"><option value="RG">Traffic Light</option><option value="GR">Gold Rush</option><option value="CB">Coolguy Blue</option><option value="IC">Invisible Challenge!</option></select></div>
+</div>
