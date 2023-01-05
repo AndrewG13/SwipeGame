@@ -1,0 +1,88 @@
+.highlighted {
+	margin: 0;
+}
+
+.container-game {
+	user-select: none;
+	margin: auto;
+	width: 20rem;
+	height: 20rem;
+	display: flex;
+	overflow-x: overlay;
+	scroll-snap-type: x mandatory;
+}
+
+.container-game div{
+	min-width: 20rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 10rem;
+	scroll-snap-align: center;
+}
+
+.container-game-disabled {
+	font-size: 10rem;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background: #69766d;
+	font-family: sans-serif;
+	border: 5px dashed black;
+}
+
+.swipe-square-wrong {
+	/*width: 20rem;*/
+	/*height: 20rem;*/
+}
+
+.swipe-square-correct {
+	/*width: 20rem;*/
+	/*height: 20rem;*/
+}
+
+.points-window {
+		font-size: 1.5rem;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 10px;
+}
+
+.timer-window {
+		font-size: 1.5rem;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    padding: 10px;
+}
+
+.settings-window {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    row-gap: 10px;
+    flex-direction: column;
+}
+
+[type="checkbox"], [type="radio"] {
+    padding: 0;
+    transform: scale(1.5);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.toggle-title, .accordion-title {
+    display: flex;
+    width: 20rem;
+    background: #fff3df;
+    margin: 20px auto !important;
+    border-radius: 6px;
+    user-select: none;
+}
+
+.button-solid {
+	background: #339e3a;
+	display: flex !important;
+	margin: 20px auto !important;
+}
